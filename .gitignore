@@ -1,0 +1,25 @@
+# Rust
+target/
+.soroban/
+.stellar/
+
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
