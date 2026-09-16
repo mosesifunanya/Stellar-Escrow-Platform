@@ -23,3 +23,10 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+# Video pipeline intermediates (keep repo lean)
+video/recordings/
+video/scenes/
+video/frames/
+video/out/
+video/assets/probe/
+video/voice/

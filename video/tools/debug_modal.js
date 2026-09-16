@@ -1,0 +1,22 @@
+const { chromium } = require('playwright-core');
+const CHROME = '/home/codespace/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome';
+const fs = require('fs');
+const ids = JSON.parse(fs.readFileSync('/tmp/demo-identities.json', 'utf8'));
+(async () => {
+  const browser = await chromium.launch({ executablePath: CHROME, headless: true, args: ['--no-sandbox'] });
+  const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
+  await ctx.addInitScript((s) => { window.__DEMO_WALLET__ = { secret: s }; }, ids.payer.secret);
+  const page = await ctx.newPage();
+  await page.goto('http://localhost:5173/', { waitUntil: 'networkidle', timeout: 45000 });
+  await page.waitForTimeout(2500);
+  console.log('buttons:', JSON.stringify((await page.locator('button').allInnerTexts()).slice(0, 20)));
+  const btn = page.locator('button:has-text("Create Escrow")').first();
+  console.log('create btn count:', await btn.count());
+  await btn.click({ timeout: 8000 }).then(() => console.log('clicked OK')).catch((e) => console.log('click fail:', String(e).slice(0, 200)));
+  await page.waitForTimeout(2500);
+  console.log('modal count:', await page.locator('.escrow-modal, .escrow-modal-overlay').count());
+  console.log('#worker count:', await page.locator('#worker').count());
+  console.log('body:', (await page.locator('body').innerText()).replace(/\s+/g, ' ').slice(0, 300));
+  await page.screenshot({ path: '/tmp/debug_modal.png' });
+  await browser.close();
+})().catch((e) => { console.error('FAILED:', String(e).slice(0, 300)); process.exit(1); });

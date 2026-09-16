@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1280px; height:720px; background:#0b0d12; font-family:'DejaVu Sans',sans-serif; color:#f0f1f5; overflow:hidden; position:relative; }
+  .glow { position:absolute; width:1100px; height:1100px; border-radius:50%; background:radial-gradient(circle, rgba(124,107,255,0.22) 0%, rgba(124,107,255,0) 60%); top:-280px; left:90px; }
+  .grid { position:absolute; inset:0; background-image:linear-gradient(rgba(124,107,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(124,107,255,0.06) 1px, transparent 1px); background-size:56px 56px; }
+  .brand { position:absolute; top:36px; left:48px; display:flex; align-items:center; gap:14px; }
+  .logo { width:44px; height:44px; border-radius:13px; background:linear-gradient(135deg,#7c6bff,#5a3fd6); display:flex; align-items:center; justify-content:center; font-size:25px; font-weight:bold; color:#fff; }
+  .name { font-size:24px; font-weight:bold; letter-spacing:1px; }
+  .net { position:absolute; top:44px; right:52px; border:1px solid #2a2e3a; background:#12141c; border-radius:999px; padding:9px 20px; font-size:17px; color:#3ecf8e; font-weight:bold; }
+  .left { position:absolute; left:48px; top:190px; width:760px; }
+  .kicker { font-size:17px; letter-spacing:6px; color:#7c6bff; font-weight:bold; margin-bottom:18px; }
+  h1 { font-size:64px; line-height:1.06; letter-spacing:-1px; }
+  h1 .accent { color:#7c6bff; }
+  .sub { margin-top:20px; font-size:22px; color:#a0a4b0; line-height:1.45; }
+  .pills { position:absolute; left:48px; bottom:48px; display:flex; gap:14px; }
+  .pill { border:1px solid #2a2e3a; background:#12141c; border-radius:999px; padding:11px 22px; font-size:17px; color:#a0a4b0; }
+  .pill b { color:#f0f1f5; }
+  .ui { position:absolute; right:-136px; top:150px; width:820px; border-radius:18px; border:1px solid #232632; box-shadow:0 30px 80px rgba(0,0,0,0.55); transform:rotate(-2deg); }
+  .ui img { width:100%; display:block; border-radius:18px; }
+  .play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:132px; height:132px; border-radius:50%; background:rgba(124,107,255,0.92); display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 18px rgba(124,107,255,0.25), 0 0 0 38px rgba(124,107,255,0.10), 0 24px 60px rgba(0,0,0,0.45); }
+  .play::after { content:''; border-left:46px solid #fff; border-top:28px solid transparent; border-bottom:28px solid transparent; margin-left:10px; }
+</style></head><body>
+<div class="glow"></div><div class="grid"></div>
+<div class="brand"><div class="logo">S</div><div class="name">StellarChain</div></div>
+<div class="net">● LIVE ON TESTNET</div>
+<div class="left">
+  <div class="kicker">DECENTRALIZED ESCROW ON SOROBAN</div>
+  <h1>Trust the contract,<br><span class="accent">not the middleman.</span></h1>
+  <div class="sub">Milestone payments, on-chain dispute resolution, deadline refunds — in 2 minutes.</div>
+</div>
+<div class="pills">
+  <div class="pill">🔗 <b>Soroban</b> contract</div>
+  <div class="pill">🛡 <b>Non-custodial</b></div>
+  <div class="pill">⚡ <b>~5s</b> settlement</div>
+</div>
+<div class="ui"><img src="shot_dashboard.png"></div>
+<div class="play"></div>
+</body></html>

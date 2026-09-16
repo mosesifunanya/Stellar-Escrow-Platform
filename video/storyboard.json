@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "StellarChain — Escrow Without the Middleman",
+    "target_seconds": 135,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "voice": "Kore",
+    "voice_style": "confident, warm, startup pitch"
+  },
+  "scenes": [
+    {
+      "id": "01_hook",
+      "title": "Hook",
+      "visual": "brand_intro",
+      "source": "generated:title_card",
+      "motion": "fade_from_black + logo_glow_pulse",
+      "narration": "Every deal between strangers starts with the same question: who goes first? The freelancer delivers the work and hopes to be paid. The client pays up front and hopes it gets done.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "02_problem",
+      "title": "The Problem",
+      "visual": "problem_callouts",
+      "source": "generated:problem_panel",
+      "motion": "sequential_callout_slides + red_pulse",
+      "narration": "Traditional escrow fixes that, but at a cost. A company holds your money, decides when you get it, and you just have to trust the numbers they show you. Fees stack up, borders slow everything down, and the ledger you can't see is the one that matters most.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "03_solution",
+      "title": "The Solution",
+      "visual": "solution_reveal",
+      "source": "generated:solution_panel",
+      "motion": "logo_slam + glow_sweep",
+      "narration": "StellarChain moves that trust into code. It's decentralized escrow infrastructure built on Stellar Soroban, where a smart contract, not a company, holds the funds and enforces the agreement.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "04_architecture",
+      "title": "Architecture",
+      "visual": "architecture_diagram",
+      "source": "assets/architecture.png",
+      "motion": "slow_zoom_in + layer_highlight",
+      "narration": "A React frontend drives the experience. A TypeScript backend prepares each transaction. And the Soroban contract on Stellar is the single source of truth, holding funds and executing every transfer.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "05_live_app",
+      "title": "Live App Tour",
+      "visual": "vercel_app",
+      "source": "recordings/app_tour.mp4",
+      "motion": "screen_capture + subtle_zoom",
+      "narration": "And it's live right now on Stellar testnet. Connect a Stellar wallet, and your dashboard shows every escrow you're part of, with amounts, milestones, and deadlines at a glance.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "06_create_escrow",
+      "title": "Creating an Escrow",
+      "visual": "create_flow",
+      "source": "recordings/create_escrow.mp4",
+      "motion": "screen_capture + step_callouts",
+      "narration": "Creating an escrow takes under a minute. Name the worker, name a neutral arbiter, set the amount, split it into milestones, pick a deadline, then sign. The wallet signature moves the funds straight into the contract. No bank account, no custodian.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "07_contract",
+      "title": "The Contract Engine",
+      "visual": "rust_code",
+      "source": "assets/contract_code.png",
+      "motion": "code_pan + highlight_boxes",
+      "narration": "Under the hood, a Rust contract enforces the rules: every payment requires the payer's signature, milestone totals must match the escrow amount, and the contract itself is the only party that can move the money.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "08_milestones",
+      "title": "Milestone Payments",
+      "visual": "milestone_flow",
+      "source": "recordings/milestones.mp4",
+      "motion": "screen_capture + status_flash",
+      "narration": "Work gets paid as it ships. Release a milestone and the contract sends that slice instantly. When the last one clears, the escrow completes itself.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "09_disputes",
+      "title": "Disputes and Refunds",
+      "visual": "dispute_flow",
+      "source": "recordings/disputes.mp4",
+      "motion": "screen_capture + split_callout",
+      "narration": "If something goes wrong, either party can open a dispute, and the arbiter settles it on-chain for one side or the other. Missed deadlines have their own safety net: after the deadline passes, the payer can pull the remaining funds back.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "10_why_stellar",
+      "title": "Why Stellar",
+      "visual": "stellar_value",
+      "source": "generated:stellar_panel",
+      "motion": "feature_grid_build + numbers_pop",
+      "narration": "Why Stellar? Settlement in seconds, fractions of a cent per transaction, and a wallet ecosystem users already trust. Soroban adds full programmability on top of those rails.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "11_quality",
+      "title": "Engineering Quality",
+      "visual": "tests_stack",
+      "source": "assets/tests.png",
+      "motion": "checklist_reveal",
+      "narration": "It's engineered, not just deployed: the contract ships with a full test suite covering every state transition, from first deposit to final refund.",
+      "pad_after": 0.4
+    },
+    {
+      "id": "12_close",
+      "title": "Close",
+      "visual": "end_card",
+      "source": "generated:end_card",
+      "motion": "cta_zoom + url_fade",
+      "narration": "StellarChain. Escrow without the middleman. Trust the contract. Try the live app on Stellar testnet today.",
+      "pad_after": 0.6
+    }
+  ]
+}

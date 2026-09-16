@@ -8,7 +8,38 @@ The platform enables participants to create programmable escrow agreements where
 
 The project is designed to demonstrate how traditional escrow workflows can be implemented as transparent, programmable, and verifiable blockchain infrastructure without requiring a centralized intermediary to custody funds.
 
-[Live Application](https://stellar-escrow-platform.vercel.app/) · [GitHub Repository](https://github.com/mosesifunanya/Stellar-Escrow-Platform)
+<div align="center">
+
+<a href="docs/video/stellarchain_pitch.mp4">
+  <img src="docs/video/thumbnail.png" alt="StellarChain pitch video — watch it" width="780"/>
+</a>
+
+**▶ Watch the 2-minute product pitch — [click the thumbnail](docs/video/stellarchain_pitch.mp4) or [open the video here](docs/video/stellarchain_pitch.mp4)**
+
+![Video](https://img.shields.io/badge/%F0%9F%8E%AC_Product_Pitch-2:24-7c6bff?style=for-the-badge&labelColor=0b0d12) ![Live](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-Testnet-3ecf8e?style=for-the-badge&labelColor=0b0d12) ![Contract](https://img.shields.io/badge/%F0%9F%93%9C_Soroban-Rust-f5b942?style=for-the-badge&labelColor=0b0d12)
+
+[Live Application](https://stellar-escrow-platform.vercel.app/) · [Pitch Video](docs/video/stellarchain_pitch.mp4) · [GitHub Repository](https://github.com/mosesifunanya/Stellar-Escrow-Platform)
+
+</div>
+
+---
+
+## Product Pitch Video
+
+Watch the full pitch (2 min 24 s): **[▶ docs/video/stellarchain_pitch.mp4](docs/video/stellarchain_pitch.mp4)**
+
+| Chapter | What you'll see |
+| --- | --- |
+| 0:00 | The problem: someone has to go first |
+| 0:22 | StellarChain: the contract is the escrow agent |
+| 0:45 | Architecture: React → Express → Soroban |
+| 1:00 | Live product tour on the Stellar testnet |
+| 1:12 | Creating an escrow, signed and settled on-chain in ~20 s |
+| 1:29 | The Rust contract engine: authorization enforced on-chain |
+| 1:40 | Milestones complete themselves · deadline refunds · disputes resolved by the arbiter |
+| 2:04 | Why Stellar · 15 passing contract tests · try it live |
+
+*Every transaction shown in the video is a real, wallet-signed transaction settled on the Stellar testnet — no mocks, no simulations.*
 
 ---
 
