@@ -26,7 +26,7 @@ The project is designed to demonstrate how traditional escrow workflows can be i
 
 ## Product Pitch Video
 
-Watch the full pitch (2 min 24 s): **[▶ docs/video/stellarchain_pitch.mp4](docs/video/stellarchain_pitch.mp4)**
+Watch the full pitch (2 min 24 s): **[▶ docs/video/stellarchain_pitch.mp4](docs/video/stellarchain_pitch.mp4)** · full-quality download on the [Releases page](https://github.com/mosesifunanya/Stellar-Escrow-Platform/releases/tag/pitch-video-v1)
 
 | Chapter | What you'll see |
 | --- | --- |
